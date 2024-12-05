@@ -18,6 +18,8 @@ model = tf.keras.models.load_model(model_path)
 class_names_path = f"{current_dir}/PlantDisease/class_dict.json"
 class_dict = json.load(open(class_names_path))
 
+
+
 #set img size
 img_size = IMG_SIZE
 #preprocessiong
@@ -59,11 +61,11 @@ def predict_image(model,image_path,class_dict):
   """
   img = preprocess_image(image_path)
   prediction = model.predict(img,verbose = 0)
-  predicted_class_index = np.argmax(prediction)
+  predicted_class_index = np.argmax(prediction).astype(str)
   predicted_class = class_dict[predicted_class_index]
   return predicted_class
 
-# Streamlit app
+# # Streamlit app
 st.title("Plant Disease Detection")
 uploaded_image = st.file_uploader("Upload an image...", type=["jpg", "jpeg", "png"])
 
