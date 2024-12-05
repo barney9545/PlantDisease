@@ -9,7 +9,7 @@ Plant diseases pose a significant threat to agriculture, and early detection is 
 ## Model Architecture
 
 The model follows the ResNet-34 architecture, implementing residual blocks with identity and convolutional shortcuts. Below is a schematic of the ResNet-34 structure:
-![Model Structure](<Model Architecture.png>)
+![Model Architecture](https://github.com/user-attachments/assets/42fd5d99-8a6e-4a99-b3e8-243610c0a5f4)
 
 
 ### Key Features:
@@ -29,7 +29,7 @@ The [PlantVillage Dataset](https://www.kaggle.com/datasets/abdallahalidev/plantv
 
 The final model achieved an accuracy of **95.70%** on the test set. The training history is provided below, showing the convergence over epochs:
 
-![Loss Vs Epoch](LossvEpoch.png) ![Accuracy Vs Epoch](AccuracyvEpoch.png)
+![Loss Vs Epoch](https://github.com/user-attachments/assets/b23af68d-a934-4063-8758-dfe51d7c87a2) ![Accuracy Vs Epoch](https://github.com/user-attachments/assets/42f4f67e-78a8-4dab-b336-bd4aee035669)
 
 
 
