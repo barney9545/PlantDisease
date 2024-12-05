@@ -20,16 +20,18 @@ The model follows the ResNet-34 architecture, implementing residual blocks with 
 ## Dataset
 
 The [PlantVillage Dataset](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset) contains over 50,000 labeled images across various plant species and disease categories. Below are sample images from the dataset:
-
-![Sample Image 1](./images/sample1.png)
-![Sample Image 2](./images/sample2.png)
-![Sample Image 3](./images/sample3.png)
+![Dataset](https://github.com/user-attachments/assets/f7e1ebda-5437-4d93-b5e6-fadd17729be1)
 
 ## Results
 
 The final model achieved an accuracy of **95.70%** on the test set. The training history is provided below, showing the convergence over epochs:
 
-![Loss Vs Epoch](https://github.com/user-attachments/assets/b23af68d-a934-4063-8758-dfe51d7c87a2) ![Accuracy Vs Epoch](https://github.com/user-attachments/assets/42f4f67e-78a8-4dab-b336-bd4aee035669)
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/b23af68d-a934-4063-8758-dfe51d7c87a2" alt="Loss Vs Epoch" width="400"></td>
+    <td><img src="https://github.com/user-attachments/assets/42f4f67e-78a8-4dab-b336-bd4aee035669" alt="Accuracy Vs Epoch" width="400"></td>
+  </tr>
+</table>
 
 
 
