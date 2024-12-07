@@ -17,4 +17,6 @@ jobs:
     - name: Build the Docker image
       run: docker build --tag barn3y95/pdapp:latest .
     - name: Push the Docker image
-      run: docker push barn3y95/pdapp:latest
+      run: |
+        docker login -u barn3y95 -p ${{ secrets.DOCKERHUB_TOKEN }}
+        docker push barn3y95/pdapp:latest
