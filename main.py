@@ -99,8 +99,12 @@ if uploaded_image is not None:
             else:
                 st.success(f'Prediction: {str(prediction)}')
                 st.write(f'Confidence: {confidence:.2f}')
+                
+                
+ms_image_path = os.path.join(os.getcwd(), "Ref", "Model Architecture.png")
+
 
 st.markdown("""
 ## Model Architecture:
 The model is built using the **ResNet-34 architecture**, which utilizes **residual blocks** with identity and convolutional shortcuts. This architecture allows the model to effectively learn deeper representations, which is crucial for complex image classification tasks like plant disease detection.""")
-st.image("Ref\Model Architecture.png", caption="ResNet-34 Model Architecture", use_container_width =True)
+st.image(ms_image_path, caption="ResNet-34 Model Architecture", use_container_width =True)
